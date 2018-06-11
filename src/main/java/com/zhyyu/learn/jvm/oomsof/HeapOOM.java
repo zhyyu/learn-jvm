@@ -1,4 +1,4 @@
-package com.zhyyu.learn.jvm;
+package com.zhyyu.learn.jvm.oomsof;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.zhyyu.learn.jvm;
+package com.zhyyu.learn.jvm.oomsof;
 
 /**
  * -Xss128k

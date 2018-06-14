@@ -16,7 +16,7 @@ public class MemoryAllocation {
 		byteAry3 = new byte[2 * _1mb];
 		byteAry4 = new byte[4 * _1mb];
 		
-		// while(true);
+		while(true);
 	}
 	
 }

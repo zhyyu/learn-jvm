@@ -1,6 +1,7 @@
 package com.zhyyu.learn.jvm.gc;
 
 /**
+ * page93
  * -Xms20m -Xmx20m -Xmn10m -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:+UseSerialGC -XX:PretenureSizeThreshold=3145728
  * @author zhongyuyu
  *

@@ -1,5 +1,5 @@
 ### 产看线程堆栈
-* jstack 1136
+* jstack -l 1136
 
 ```
 C:\Users\Administrator>jstack 1136
@@ -69,4 +69,32 @@ t.wait() [0x000000001e07f000]
 
 
 JNI global references: 6
+```
+
+* with deadlock
+
+```
+Found one Java-level deadlock:
+=============================
+"Thread-1":
+  waiting to lock monitor 0x00000000188d4778 (object 0x00000000d7d850e0, a java.lang.Integer),
+  which is held by "Thread-0"
+"Thread-0":
+  waiting to lock monitor 0x00000000028f9d48 (object 0x00000000d7d850f0, a java.lang.Integer),
+  which is held by "Thread-1"
+
+Java stack information for the threads listed above:
+===================================================
+"Thread-1":
+        at com.zhyyu.learn.jvm.tool.DeadThreadDetect$Task2.run(DeadThreadDetect.java:44)
+        - waiting to lock <0x00000000d7d850e0> (a java.lang.Integer)
+        - locked <0x00000000d7d850f0> (a java.lang.Integer)
+        at java.lang.Thread.run(Thread.java:745)
+"Thread-0":
+        at com.zhyyu.learn.jvm.tool.DeadThreadDetect$Task1.run(DeadThreadDetect.java:29)
+        - waiting to lock <0x00000000d7d850f0> (a java.lang.Integer)
+        - locked <0x00000000d7d850e0> (a java.lang.Integer)
+        at java.lang.Thread.run(Thread.java:745)
+
+Found 1 deadlock.
 ```

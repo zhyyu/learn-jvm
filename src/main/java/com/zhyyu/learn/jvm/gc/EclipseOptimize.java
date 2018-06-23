@@ -5,7 +5,6 @@ package com.zhyyu.learn.jvm.gc;
  * 
 -Xms1024m
 -Xmx1024m
--Xmn512m
 -XX:+UseParNewGC
 -XX:+UseConcMarkSweepGC
 -XX:CMSInitiatingOccupancyFraction=85

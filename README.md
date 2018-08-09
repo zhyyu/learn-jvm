@@ -122,7 +122,7 @@
 ### 1.7 多线程
 
 - java 线程内存模型
-    - ![image](http://pd4wihur9.bkt.clouddn.com/jvm%20%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.png)
+    - ![image](http://pd4wihur9.bkt.clouddn.com/java%20%E7%BA%BF%E7%A8%8B%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
 - volatile
     - ![image](http://pd4wihur9.bkt.clouddn.com/volatile1.png)
     - ![image](http://pd4wihur9.bkt.clouddn.com/volatile2.png)

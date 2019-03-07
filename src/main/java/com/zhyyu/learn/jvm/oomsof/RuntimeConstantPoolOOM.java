@@ -8,7 +8,11 @@ import java.util.List;
  * 运行时常量池属于方法区
  * @author zhongyuyu
  * 
- * jkd1.7 无oom
+ * jkd1.8 无oom
+ * 
+ * <pre>
+ * <jdk1.7 hotspot: 字符串常量池放在永久代(会oom)
+ * 
  */
 public class RuntimeConstantPoolOOM {
 

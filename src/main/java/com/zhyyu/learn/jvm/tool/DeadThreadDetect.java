@@ -51,3 +51,18 @@ public class DeadThreadDetect {
 	}
 	
 }
+
+
+//"Thread-1" #14 prio=5 os_prio=0 tid=0x000000001e76c000 nid=0x5ad0 waiting for monitor entry [0x000000001fdbf000]
+//		   java.lang.Thread.State: BLOCKED (on object monitor)
+//		        at com.zhyyu.learn.jvm.tool.DeadThreadDetect$Task2.run(DeadThreadDetect.java:44)
+//		        - waiting to lock <0x000000076b37b590> (a java.lang.Integer)
+//		        - locked <0x000000076b37b5a0> (a java.lang.Integer)
+//		        at java.lang.Thread.run(Thread.java:745)
+//
+//"Thread-0" #13 prio=5 os_prio=0 tid=0x000000001e762800 nid=0x2974 waiting for monitor entry [0x000000001fc4f000]
+//   java.lang.Thread.State: BLOCKED (on object monitor)
+//        at com.zhyyu.learn.jvm.tool.DeadThreadDetect$Task1.run(DeadThreadDetect.java:29)
+//        - waiting to lock <0x000000076b37b5a0> (a java.lang.Integer)
+//        - locked <0x000000076b37b590> (a java.lang.Integer)
+//        at java.lang.Thread.run(Thread.java:745)
